@@ -1,0 +1,139 @@
+<div id="app">
+
+  <h1>Identificación de patrones de las incidencias delictivas en México y análisis geoespacial en México de riesgo de incidencias delictivas.</h1>
+
+  <h4>Nombre: Carla Yuli Rosales Chacón.</h4>
+
+  <h4>URL StackBlizt: <a href="https://js-1bgda9.stackblitz.io" target="_blank">js-1bgda9.stackblitz.io</a></h4>
+
+  <h4>GitHub: <a href="https://github.com/carlyrc/08MBID_Visualizacion_Datos_Practica" target="_blank">https://github.com/carlyrc/08MBID_Visualizacion_Datos_Practica</a></h4>
+
+  <h4>Fuente de datos: 
+    <a href="https://docs.google.com/spreadsheets/d/1msYVSdw3bSPAfp2joF8cOZJbCs0hVfzPj2qfERa4FlY/edit?usp=sharing" target="_blank">
+      google Sheet Incidencias Delictivas
+    </a>
+  </h4>
+
+  <h4>Origen de los datos (Gobierno Mexico):<a href="https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva" target="_blank">
+  https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva</a>
+
+  <h4>Fecha Presentación: 12/03/2024</h4>
+
+
+  <div class="summary">
+    <h2>Introducción</h2>
+    <div class="text">
+      La incidencia delictiva en México constituye un desafío multifacético que impacta la seguridad pública y el bienestar de la sociedad. La complejidad de este problema demanda una comprensión profunda de las tendencias delictivas a lo largo del tiempo, así como la identificación de factores clave que influyen en la ocurrencia de diversos crímenes. Para abordar esta problemática, es imperativo desarrollar una solución de Business Intelligence (BI) que permita un análisis exhaustivo y una toma de decisiones informada.
+      Las autoridades gubernamentales buscan comprender las tendencias a lo largo de las entidades federales y municipales.
+    </div>
+    <div class="text"> <span class="negrita">¿Cómo podemos identificar patrones y tendencias a nivel de las entidades federales y municipales de las incidencias delictivas desde el 2015 al 2024?: </span>
+    La visualización de datos nos permitirá analizar y encontrar patrones de las incidencias delictivas.
+    </div>
+
+    <div class="text"> <span class="negrita">¿Cómo podemos identificar y abordar de manera específica las zonas críticas de incidencia delictivas en México?:</span>
+      Mediante la visualización podemos realizar un análisis geoespacial e identificar áreas de alto riesgo de incidencias delictivas.
+    </div>
+
+      <h2>Objetivos</h2>
+
+      <div class="text"><span class="negrita">¿Cómo podemos identificar patrones y tendencias a nivel de las entidades federales y municipales de las incidencias delictivas desde el 2015 al 2024?</span>
+        El primer objetivo es, proporcionar al gobierno gubernamental una herramienta que les permita identificar los patrones específicos de cambio por zona durante los años 2015 al 2023, permitiendo así clasificar y analizar las incidencias delictivas según los diferentes tipos de crímenes (robos, homicidios, secuestros, etc.), además de distinguir la prevalencia de cada tipo y las posibles relaciones entre ellos.
+    </div>
+    
+      <div class="text"><span class="negrita">¿Cómo podemos identificar y abordar de manera específica las zonas críticas de incidencia delictivas en México?</span>
+        El segundo objetivo que se persigue es, ofrecer una herramienta de visualización geoespacial para identificar áreas de alto riesgo de incidencia delictiva.
+    </div>
+
+    <h2>Fuentes de datos</h2>
+    <div class="text">Para la resolución del problema se precisan datos provenientes de la Web del Sistema de Seguridad Pública del Gobierno de México.
+    </div>
+    <div class="text"><span class="negrita">Historia de Datos:</span> 2015 al 2024.</div>
+    <div class="text"><span class="negrita">Variables:</span> Año,Clave_Ent,Entidad,Bien jurídico afectado,Tipo de delito,Subtipo de delito,Modalidad,Sexo,Rango de edad,Enero - diciembre</div>
+
+  <div class="text"><span class="negrita">DataSet reutilizado de otras asignaturas: :</span> Sí, el dataset esta siendo utilizado en el Curso de TFM.</div>
+  <div class="text"><span class="negrita">Referencia: </span>
+    Del Sistema Nacional De Seguridad Pública, S. E. (2024, 16 enero). Datos abiertos de incidencia delictiva. gob.mx. https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva
+  </div>
+  <div class="text"><span class="negrita">GeoJson Mexico: </span>
+    https://github.com/strotgen/mexico-leaflet/blob/master/states.geojson
+  </div>
+
+  <h2>Audiencia</h2>
+  <div class="text"><span class="negrita">¿A quién va dirigida la presentación?</span>
+    las visualizaciones seran las siguientes audiencias>
+ </div>
+ <div class="text"><span class="negrita">Autoridades Gubernamentales de Seguridad Pública,</span> ya que con las visualizaciones propuestas se proporcionará información estratégica para la formulación de políticas públicas de seguridad y asignación eficiente de recursos en diferentes niveles gubernamentales.</div>
+
+  <div class="text"><span class="negrita">Analistas de Seguridad y Criminólogos,</span> ya que con la visualización es propuestas se podrá realizar análisis detallados, comprender las dinámicas delictivas y proponer estrategias de intervención basadas en evidencia.</div>
+
+  <h2>Herramientas elegidas</h2>
+  <div class="text"><span class="negrita"> Primera herramienta, </span> Google Spreadsheets de Google es una herramienta de hojas de cálculo que permite crear hojas de cálculo, aplicar formatos y mediante la librería Google Charts incluir gráficos de forma sencilla. Tipos de gráficos elegidos: Gráfico de barras vertical y horizontal.
+  </div>
+
+  <div class="text"><span class="negrita"> Segunda herramienta,</span> Datawrapper, es una herramienta de visualización de datos en línea que permite a los usuarios crear gráficos interactivos y mapas de manera rápida y sencilla. Hay varias razones para considerar el uso de Datawrapper: Facilidad de uso, amplia variedad de Gráficos y Mapas, Integración de Datos Externa, etc.
+    </div>
+
+    <div class="text"><span class="negrita"> Tercera herramienta,</span> Stackblitz, es un entorno de desarrollo en línea que proporciona un editor de código y una plataforma de ejecución para proyectos basados en tecnologías web, como JavaScript, TypeScript, Angular y React. Aquí hay algunas razones para considerar el uso de StackBlitz: Acceso Rápido y Sencillo, Entorno Preconfigurado, Previsualización Instantánea, etc.
+    </div>
+
+  <h2>Evolución de Incidencias por año</h1>
+    <div class="text"> Mediante el siguiente tipo de gráfico de lineas se muestra la tendencia de la cantidadd de incidencias a lo largo de los años 2015 - 2023.La evolución de los delitos por año en Mexico está influenciada por una variedad de factores sociales, económicos, políticos y culturales. A continuación, se presentan algunos elementos comunes que pueden contribuir a la evolución de los delitos a lo largo del tiempo:
+    - Factores demográficos
+    - Desarrollo tecnológico
+    - Cambio en las políticas gubernamentales
+    - Cambio en la cultura y los valores sociales
+    - Desarrollo de programas de prevención    
+    </div>
+    <p>
+      <iframe title="Evolucion del Nro de incidencias por Año" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfs3ziPTjne1DU3gRhKnTTyz7U7OcFY2huKYogjAuL_PrhVb9Q41LFJl-4nJ2j07TCsjGZrGEhdBtI/pubchart?oid=1423250042&format=interactive"></iframe>
+    </p>
+
+    <p><span class="negrita">Gráfico número 1. Evolución de Incidencias en el año 2023.</span></p>
+    <p>
+    <iframe title="Evolucion del Nro de incidencias por Año" width="700" height="471" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfs3ziPTjne1DU3gRhKnTTyz7U7OcFY2huKYogjAuL_PrhVb9Q41LFJl-4nJ2j07TCsjGZrGEhdBtI/pubchart?oid=965089371&format=interactive"></iframe>
+  </p>
+  <p><span class="negrita">Gráfico número 1. Evolución de Incidencias en el año 2023.</span></p>
+
+
+    <h2>Incidencias Delictivas por tipo de delito</h1>
+      En el siguiente gráfico se puede apreciar de manera ordenada el número de incidencias clasificados en los diferentes tipos de delitos en el año 2023,  las lesiones y homicidios son los delitos con mayor tasa de ocurrencia.
+      <p>
+        <iframe title="Incidencias Delictivas por tipo de delito" width="681" height="421" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfs3ziPTjne1DU3gRhKnTTyz7U7OcFY2huKYogjAuL_PrhVb9Q41LFJl-4nJ2j07TCsjGZrGEhdBtI/pubchart?oid=1183234875&format=interactive&amp;format=interactive"></iframe>
+    </p>
+    <p><span class="negrita">Gráfico número 2. Incidencias Delictivas por tipo de delito.</span></p>
+
+  <h2> Nro de Incidencias delictivas por Bien Jurídico afectado.</h1>
+    <div class="text"> Para el gráfico número tres resulta más adecuado elegir un gráfico de barras verticales ya que proporciona a la audiencia una viosualizacion sencilla para poder hacer la comparación de los delitos ocurridos en los diferente tipos de Bien Jurídicos. Se visualiza una mayor ocurrencia de delitos relacionados con el bien jurídico de la vida y la integridad corporal puede atribuirse a varios factores interrelacionados. A continuación, se presentan algunas explicaciones posibles: Naturaleza fundamental de los bienes jurídicos, Gravedad y visibilidad, Impacto emocional y social, etc 
+    </div>  
+    <iframe title="Nro de Incidencias delictivas por Bien Jurídico afectado " aria-label="Column Chart" id="datawrapper-chart-2pbWU" src="https://datawrapper.dwcdn.net/2pbWU/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+    <p><span class="negrita">Gráfico número 3. Nro de Incidencias delictivas por Bien Jurídico afectado</span></p>
+
+    <h2>Cuadro de incidencias incurridas en el año 2023</h2>
+    <div class="text">  </div>
+    <iframe title="Invidencias delictivas por entidades federales de México en el año 2023" aria-label="Table" id="datawrapper-chart-oedHd" src="https://datawrapper.dwcdn.net/oedHd/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="598" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+
+    <p><span class="negrita">Imagen número 5. >Cuadro Top de mayor incidencias en Entidades Federales.</span></p>
+
+    <h2>Estados Federales de alto riesgo de incidencia delictiva</h2>
+    <div class="text"> con el gráfico de mapa de incidencias delictivas en las entidades federales de México se tiene como objetivo principal proporcionar una representación visual y geoespacial de la distribución y concentración de los delitos en diferentes estados de México, por ejempolo las entidades con mayor tasas de crimiladidad se van pintando con un color más notorio, como es el caso de la Entidad Federal de México que tiene la mayor tasa de incidencias en comparación con el resto de entidades federales.</div>
+    <iframe title="Incidencias delictivas por Estados Federales de México " aria-label="Map" id="datawrapper-chart-qyKBX" src="https://datawrapper.dwcdn.net/qyKBX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="557" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+    <p><span class="negrita">Imagen número 6. Gráfico de Mapas de incidencias delictivas en las entidades federales</span></p>
+
+    <h2>Conclusiones</h2>
+  <div class="text"><span class="negrita"></span>
+  Con el presente trabajo se pudo realizar un análisis descriptivo preliminar y cumplir con los dos objetivos planteados, pero se requiere realizar un análisis más profundo de las incidencias delictivas en las entidades federales de México, gracias a los gráfico planteados se da el impacto positivo significativo en la seguridad pública al mejorar la capacidad de respuesta, prevenir situaciones de riesgo y optimizar el uso de recursos. La implementación exitosa requiere una colaboración efectiva entre instituciones, inversiones en tecnología y capacitación continua del personal involucrado.
+  </div>
+  <h2>Trabajos futuros</h2>
+  <div class="text"><span class="negrita"></span>
+    Se debe continuar el análisis descriptivo a mayor detalle, para que en función de la data histórica se pueda construir una soluciónn de Business Intelligence o en todo caso la construccion de Cuadros de mando integrales en las 4 perspectivas, posteriormente se podría realizar predicciones de posibles delitos por area geográfica, ya que con estas sugerencias se podría mejorar la toma de decisiones y la gestión de la seguridad pública. Aquí listo algunas áreas de investigación y desarrollo que podrían formar parte de futuros trabajos en este contexto.
+  </div>
+  <div class="text"><span class="negrita">Análisis de redes y conexiones:</span>
+     Examinar las relaciones y conexiones entre diferentes actores en el ámbito delictivo, como organizaciones criminales, para comprender mejor la estructura y dinámica de estas redes.
+  </div>
+  <div class="text"><span class="negrita">Evaluación de la efectividad de intervenciones:</span>
+     Realizar estudios de evaluación para medir la eficacia de las intervenciones y políticas implementadas en respuesta a las tendencias identificadas en los datos. Esto puede incluir análisis de antes y después de la implementación de medidas específicas.
+  </div>
+</div>
